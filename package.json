@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "run": "nodemon index.js",
-    "run-express": "nodemon express.js"
+    "run-express": "nodemon express.js",
+    "docker build": "docker build . --tag node-blog",
+    "docker run": "docker run -d -p 4200:4200 node-blog"
   },
   "author": "Anton",
   "license": "ISC",
